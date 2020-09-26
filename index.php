@@ -26,9 +26,24 @@ $second->add_grade(50);
 $students['a456'] = $second;
 
 
-foreach($students as $student)
-echo $student->toString();
+$second = new Student();
+$second->surname = "zhenran";
+$second->first_name = "Huang";
+
+$second->add_email('work1','1214084237@qq.com');
+
+$second->add_grade(95);
+$second->add_grade(80);
+$second->add_grade(50);
+$students['a458'] = $second;
+
+
+$stu=new Student();
+$stu->ksort($students);
+
 ?>
+
+
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
